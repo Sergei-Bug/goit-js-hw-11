@@ -1,0 +1,123 @@
+body {
+  background-color: #d1e9ff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-form {
+  padding: 15px 0 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    155deg,
+    rgba(9, 9, 121, 0.7) 0%,
+    rgba(6, 78, 166, 0.7) 23%,
+    rgba(0, 212, 255, 0.7) 100%
+  );
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.search-form input {
+  width: 300px;
+  height: 26px;
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
+  outline: none;
+  border: 2px #028dff solid;
+  border-radius: 5px;
+}
+.search-form button {
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #028dff;
+  border: transparent;
+  border-radius: 5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.load-more {
+  margin: 50 auto;
+  display: block;
+  width: 150px;
+  height: 40px;
+
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #028dff;
+  border: transparent;
+  border-radius: 5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.load-more:hover,
+.load-more:focus,
+.search-form button:hover,
+.search-form button:focus {
+  background-color: #0270ff;
+  transform: translateY(3px);
+}
+
+.gallery {
+  flex-wrap: wrap;
+  margin: -15px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  row-gap: 18px;
+  column-gap: 15px;
+}
+
+.photo-card {
+  flex-basis: calc(100% / 3 - 15px * 2);
+  border-radius: 8px;
+  box-shadow: 5px 3px 3px #818080;
+  overflow: hidden;
+  background-color: rgba(7, 164, 255, 0.2);
+}
+.photo-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.gallery .info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
